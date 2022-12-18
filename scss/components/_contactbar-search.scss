@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+
+    .button {
+        margin-left: 40px;
+      }
+    
+      .button {
+        background-color: white;
+        border: 0;
+        border-radius: 6px;
+        margin: 40px;
+      }
+      .form__label, .form__input {
+        display: block;
+      }
+      
+      .contact__search {
+        display: flex;
+      }
+      .button {
+        margin: 0;
+        border-radius: 0;
+      }
+      .contact__search {
+        margin-right: 20px;
+      }
+      .form__input {
+        height: 40px;
+        border: 0;
+        padding: 20px;
+      }
+
+      .button {
+        padding: 0;
+      }
+      .button-img {
+        display: block;
+        padding: 11px;
+      }
+    
+      .button {
+        cursor: pointer;
+      }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .contact__search {
+        margin-right: 40px;
+      }
+}
+
+@media screen and (min-width: 1680px) {
+    .contact__search {
+      margin-left: 10px;
+      margin-right: 160px;
+    }
+    .form__input {
+      width: 310px;
+    }
+  }
+

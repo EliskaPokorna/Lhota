@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+    .logo {
+        display: flex;
+        align-items: flex-end;
+        color: #0056A3;
+        text-decoration: none;
+        font-size: 32px;
+      }
+      .logo__title {
+        margin-bottom: -6px;
+        margin-right: 10px;
+      }
+
+}

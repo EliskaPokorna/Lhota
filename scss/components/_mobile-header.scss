@@ -1,0 +1,24 @@
+@use '_base';
+
+/*Mobile header*/
+
+  .mobile-header__link {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: #0056A3;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  .mobile-header__title {
+    margin-bottom: -6px;
+    margin-right: 10px;
+  }
+
+
+  @media screen and (max-width: 767px) {
+  .header, .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+
+    .menu {
+        display: block;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style: none;
+      }
+      .nav-item {
+        flex: 1 1 auto;
+        text-align: center;
+        display: inline-block;
+      }
+      .nav-link {
+        display: block;
+        background-color: #004380;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        height: 100%;
+        padding: 20px 40px;
+        border: 1px solid #0056A3;
+      }
+      .nav-link:hover, .nav-link:focus, .nav-link:active {
+        background-color: #FBBB0E;
+        color: #003566;
+      }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .nav-link {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1680px) {
+    .menu__nav {
+      background-color: #004380;
+    }
+    .nav {
+      max-width: 1680px;
+      margin: 0 auto;
+    }
+  }

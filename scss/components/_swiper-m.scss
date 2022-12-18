@@ -1,0 +1,28 @@
+@use '_base';
+
+  .swiper-m {
+    background-image: url("../images/swiper-M.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 30px;
+  }
+
+@media screen and (min-width: 768px) {
+    .swiper-m {
+        padding: 140px;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-m {
+      padding: 180px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+
+    .swiper-m {
+        height: 480px;
+      }
+}
