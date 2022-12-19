@@ -1,0 +1,19 @@
+@use '_base';
+
+.headerfooter {
+    background-color: #EBF1F7;
+}
+
+@media screen and (min-width: 768px) {
+
+.headerfooter {
+    background-image: url("../images/footer.png"); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    max-width: 100%;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+
+}

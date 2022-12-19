@@ -1,0 +1,26 @@
+@use '_base';
+
+.headerfooter__map {
+    height: 300px;
+    width: 100%;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .headerfooter__map {
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .headerfooter__map {
+        width: 785px;
+        height: 400px;
+    }
+
+}
