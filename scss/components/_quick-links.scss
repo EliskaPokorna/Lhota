@@ -1,91 +1,72 @@
-@use '_base';
+@use "_base";
 
 .quick-links {
-    padding: 0;
-    max-width: 1680px;
+  padding: 0;
+  max-width: 1680px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1600px;
     margin: 0 auto;
+  }
 }
 
 .links {
-    display: grid;
-    text-align: center;
-    gap: 10px;
-    margin: 15px;
+  display: grid;
+  text-align: center;
+  gap: 10px;
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 20px 80px 0 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin: 0;
+    margin-top: 50px;
+  }
 }
 
 .links__item {
-    background-color: #EBF1F7;
-    text-decoration: none;
-    color: #0F5499;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 5px 0;
-}
+  background-color: #ebf1f7;
+  text-decoration: none;
+  color: #0f5499;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
 
-.links__text {
-    margin: 0;
+  @media screen and (min-width: 768px) {
+    padding: 20px 0;
+    font-size: 22px;
+  }
 }
 
 .links__item:hover {
-    color: #FBBB0E;
-    background: transparent linear-gradient(116deg, #004380 0%, #002240 100%) 0% 0% no-repeat padding-box;
+  color: #fbbb0e;
+  background: transparent linear-gradient(116deg, #004380 0%, #002240 100%) 0%
+    0% no-repeat padding-box;
 }
 
-@media screen and (min-width: 768px) {
-
-    .links {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .quick-links {
-        margin: 0;
-    }
-
-    .links__item {
-        padding: 20px 0;
-    }
-
-    .links__img {
-        margin-bottom: 10px;
-    }
-
-    .links__item {
-        font-size: 22px;
-    }
-
+.links__img {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-
-    .links {
-        margin: 20px 80px 0 80px;
-    }
-
-}
-
-
-
-@media screen and (min-width: 1440px) {
-
-    .quick-links {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-
-    .links {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 32px;
-        margin-top: 50px;
-    }
-
-}
-
-
-@media screen and (min-width: 1600px) {
-    
-    .links {
-        margin: 0;
-        margin-top: 50px;
-    }
-
+.links__text {
+  margin: 0;
 }

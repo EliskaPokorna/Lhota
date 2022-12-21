@@ -1,79 +1,96 @@
-@media screen and (min-width: 768px) {
+@use "_base";
 
-    .contact, .contact__left, .contact__right {
-        display: flex;
-        align-items: center;
-      }
-    
-    
-      .contact__link--left, .contact__link--right {
-        margin-left: 40px;
-      }
-
-      .contact__link--specific {
-        display: block;
-      }
-
-      .contact {
-        flex-direction: column;
-      }
-      .contact__right {
-        flex-direction: row;
-      }
-
-      .contact__link--right {
-        margin: 0;
-      }
-
-      .contact__link--left, .contact__link--right {
-        display: block;
-      }
-      .contact__link--left:hover, .contact__link--right:hover, .button:hover, .contact__link--different:hover {
-        background-color: #0F5499;
-      }
-
-      .contact__icon {
-        display: block;
-        padding: 11px;
-      }
-
-      .contact__icon:hover {
-        padding: 11px;
-      }
-      .contact__icon {
-        filter: invert(10%) sepia(100%) saturate(7499%) hue-rotate(200deg) brightness(89%) contrast(101%);
-      }
-      .contact__icon:hover, .button-img:hover {
-        filter: invert(60%) sepia(97%) saturate(386%) hue-rotate(3deg) brightness(102%) contrast(107%);
-      }
-      .contact__icon--different:hover {
-        filter: none;
-      }
-
+.contact,
+.contact__left,
+.contact__right {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.contact {
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 
-@media screen and (min-width: 1280px) {
-    .contact {
-      flex-direction: row;
-    }
-    .contact__left {
-      margin-right: 40px;
-      margin-bottom: 0;
-    }
-    .contact__link--left {
-      margin-left: 60px;
-    }
-
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
 }
 
-
-@media screen and (min-width: 1680px) {
-
-    .contact__link--left {
-        margin-right: 80px;
-        margin-left: 0;
-      }
-
+.contact__left {
+  @media screen and (min-width: 1280px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 
+.contact__right {
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.contact__link--left,
+.contact__link--right {
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+    display: block;
+  }
+}
+
+.contact__link--left {
+  @media screen and (min-width: 1280px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-right: 80px;
+    margin-left: 0;
+  }
+}
+
+.contact__link--left:hover,
+.contact__link--right:hover,
+.button:hover,
+.contact__link--different:hover {
+  @media screen and (min-width: 768px) {
+    background-color: #0f5499;
+  }
+}
+
+.contact__link--right {
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.contact__icon {
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 11px;
+    filter: invert(10%) sepia(100%) saturate(7499%) hue-rotate(200deg)
+      brightness(89%) contrast(101%);
+  }
+}
+
+.contact__icon:hover {
+  @media screen and (min-width: 768px) {
+    padding: 11px;
+  }
+}
+
+.contact__icon:hover,
+.button-img:hover {
+  @media screen and (min-width: 768px) {
+    filter: invert(60%) sepia(97%) saturate(386%) hue-rotate(3deg)
+      brightness(102%) contrast(107%);
+  }
+}
+
+.contact__icon--different:hover {
+  @media screen and (min-width: 768px) {
+    filter: none;
+  }
+}

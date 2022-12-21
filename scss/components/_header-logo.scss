@@ -1,16 +1,22 @@
-@use '_base';
+@use "_base";
 
-@media screen and (min-width: 768px) {
-    .logo {
-        display: flex;
-        align-items: flex-end;
-        color: base.$color-text;
-        text-decoration: none;
-        font-size: 32px;
-      }
-      .logo__title {
-        margin-bottom: -6px;
-        margin-right: 10px;
-      }
-
+.logo {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    color: base.$color-text;
+    text-decoration: none;
+    font-size: 32px;
+  }
 }
+
+.logo__title {
+  @media screen and (min-width: 768px) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 42px;
+  }
+}
+
+

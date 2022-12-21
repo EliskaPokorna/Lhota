@@ -1,17 +1,15 @@
-@use '_base';
+@use "_base";
 
-
-@media screen and (min-width: 768px) {
-
-    .events__element {
+.events__element {
+  @media screen and (min-width: 768px) {
     padding-bottom: 20px;
     margin-bottom: 40px;
-    border-bottom: 2px solid #DAE6F2;
+    border-bottom: 2px solid #dae6f2;
+  }
 }
 
-    .events__img {
-        padding: 0;
-    }
-
-
+.events__img {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }

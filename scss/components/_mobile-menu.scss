@@ -1,80 +1,77 @@
-@use '_base';
+@use "_base";
 
-/*Mobile menu*/
+.mobile-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .mobile-nav {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: base.$color-primary;
-  }
-  
-  .mobile-nav__link {
-    display: block;
-    text-decoration: none;
-    padding: 15px 20px;
-    font-weight: 600;
-    color: white;
-  }
-  
-  .mobile-nav__item {
-    border-bottom: 1px solid white;
-  }
-  
-  .mobile-menu__checkbox:checked ~ .mobile-nav {
-    display: block;
-  }
-  
-  .mobile-menu__toggler {
-    cursor: pointer;
-    display: block;
-    background-color: base.$color-primary;
-    color: white;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  
-  .mobile-nav__link:hover, .mobile-nav__link:focus, .mobile-nav__link:active {
-    background-color: base.$color-secondary;
-    color: base.$color-primary;
-  }
-  
-  .mobile-menu__checkbox {
-    position: absolute;
-    left: -9999px;
-  }
-  
-  .mobile-concact__right {
-    display: flex;
-  }
-  
-  .mobile-concact__link {
-    margin-right: 20px;
-  }
-  
-  .mobile-concact__icon {
-    height: 1.3em;
-  }
-  
-  .mobile-menu__container {
-    position: relative;
-  }
-  
-  .mobile-concact__right {
-    position: absolute;
-    top: 20px;
-    right: 0;
-  }
-  
-  .mobile-concact__icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(316deg) brightness(104%) contrast(103%);
-  }
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: base.$color-primary;
+}
 
-  @media screen and (min-width: 768px) {
-    .mobile-menu {
-      display: none;
-    }
-  }
+.mobile-nav__item {
+  border-bottom: 1px solid white;
+}
 
+.mobile-nav__link {
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-nav {
+  display: block;
+}
+
+.mobile-menu__toggler {
+  cursor: pointer;
+  display: block;
+  background-color: base.$color-primary;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.mobile-nav__link:hover,
+.mobile-nav__link:focus,
+.mobile-nav__link:active {
+  background-color: base.$color-secondary;
+  color: base.$color-primary;
+}
+
+.mobile-menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.mobile-concact__right {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.mobile-concact__link {
+  margin-right: 20px;
+}
+
+.mobile-concact__icon {
+  height: 1.3em;
+}
+
+.mobile-menu__container {
+  position: relative;
+}
+
+.mobile-concact__icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(316deg)
+    brightness(104%) contrast(103%);
+}

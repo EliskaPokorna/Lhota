@@ -1,93 +1,87 @@
-@use '_base';
+@use "_base";
 
-.events__element {
-    display: flex;
-    flex-direction: column;
+.events {
+  @media screen and (min-width: 768px) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+  }
 }
 
 .events__title {
-    text-transform: uppercase;
-    margin: 20px 0;
-    color: base.$color-text;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: base.$color-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    margin-left: 20px;
+    font-weight: 700;
+  }
 }
 
-.events__link {
-    text-transform: uppercase;
-    color: base.$color-link;
+.events__element {
+  display: flex;
+  flex-direction: column;
 
-}
-
-.events__link:hover {
-    text-decoration: none;
-    color: base.$color-primary;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin: 0 20px;
+  }
 }
 
 .events__img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    max-width: 190px;
+    margin-right: 20px;
+  }
+}
+
+.events__link {
+  text-transform: uppercase;
+  color: base.$color-link;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.events__link:hover {
+  text-decoration: none;
+  color: base.$color-primary;
+}
+
+.events__subtitle {
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    font-weight: 500;
+  }
 }
 
 .events__calendar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .events__date-icon {
-    height: 14px;
-    margin-right: 10px;
+  height: 14px;
+  margin-right: 10px;
 }
 
 .events__date {
-    margin: 0;
-    color: base.$color-primary;
-    font-style: italic;
+  margin: 0;
+  color: base.$color-primary;
+  font-style: italic;
 }
 
 .events__description {
-    font-style: italic;
+  font-style: italic;
 }
-
-
-@media screen and (min-width: 768px) {
-
-    .events__element {
-        flex-direction: row;
-        margin: 0 20px;
-    }
-
-    .events__title {
-        font-size: 28px;
-        margin-left: 20px;
-    }
-
-    .events__img {
-        max-width: 100%;
-        max-width: 190px;
-        margin-right: 20px;
-    }
-
-    .events {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 70px 0 0 0;
-    }
-
-    .events__subtitle {
-        font-size: 22px;
-    }
-
-    .events__link {
-        display: inline-block;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .events {
-        margin-bottom: 60px;
-    }
-
-}
-
-

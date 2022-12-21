@@ -1,26 +1,33 @@
-@use '_base';
-@use '_header';
-@use '_mobile-header';
-@use '_mobile-menu';
-@use '_swiper-m';
-@use '_header-logo';
-@use '_contactbar';
-@use '_contactbar-search';
-@use '_menu';
-@use '_quick-links';
-@use '_events';
-@use '_partnersbar';
-@use '_headerfooter';
-@use '_footer-foto';
-@use '_headerfooter-map';
-@use '_footer';
+@use "_base";
+@use "_header";
+@use "_mobile-header";
+@use "_mobile-menu";
+@use "_swiper-m";
+@use "_header-logo";
+@use "_contactbar";
+@use "_contactbar-search";
+@use "_menu";
+@use "_quick-links";
+@use "_events";
+@use "_partnersbar";
+@use "_headerfooter";
+@use "_footer-foto";
+@use "_headerfooter-map";
+@use "_footer";
 
-@use '_border-top';
-@use '_events-border-bottom';
-
+@use "_border-top";
+@use "_events-border-bottom";
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+
+.events__link, .events__date, .events__description, .headerfooter__text, .headerfooter__link {
+  font-family: 'Mulish', sans-serif;
+}
