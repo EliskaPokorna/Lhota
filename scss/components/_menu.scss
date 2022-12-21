@@ -1,3 +1,5 @@
+@use '_base';
+
 @media screen and (min-width: 768px) {
 
     .menu {
@@ -16,16 +18,18 @@
       }
       .nav-link {
         display: block;
-        background-color: #004380;
+        background-color: base.$color-primary;
         color: white;
         text-transform: uppercase;
         text-decoration: none;
         height: 100%;
         padding: 20px 40px;
-        border: 1px solid #0056A3;
+        border: 1px solid base.$color-text;
+        font-weight: 400;
+        font-size: 20px;
       }
       .nav-link:hover, .nav-link:focus, .nav-link:active {
-        background-color: #FBBB0E;
+        background-color: base.$color-hover;
         color: #003566;
       }
 
@@ -41,7 +45,7 @@
   
   @media screen and (min-width: 1680px) {
     .menu__nav {
-      background-color: #004380;
+      background-color: base.$color-primary;
     }
     .nav {
       max-width: 1680px;

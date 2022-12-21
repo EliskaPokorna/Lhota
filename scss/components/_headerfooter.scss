@@ -12,7 +12,7 @@
 }
 
 .headerfooter__title {
-    color: #0056A3;
+    color: base.$color-text;
     font-weight: 600;
     font-size: 20px;
 }
@@ -26,7 +26,7 @@
 }
 
 .headerfooter__link {
-    color: #007AF2;
+    color: base.$color-link;
 }
 
 .headerfooter__link:hover {
@@ -45,9 +45,17 @@
 @media screen and (min-width: 1280px) {
 
     .headerfooter__row {
-        align-items: flex-start;
+        flex-wrap: nowrap;
+
         max-width: 1600px;
         margin: 0 auto;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .headerfooter__col {
+        flex-basis: 25%;
+        padding: 0;
     }
 
 }

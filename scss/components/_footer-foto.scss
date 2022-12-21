@@ -1,7 +1,7 @@
 @use '_base';
 
 .headerfooter {
-    background-color: #EBF1F7;
+    background-color: base.$color-secondary;
 }
 
 @media screen and (min-width: 768px) {

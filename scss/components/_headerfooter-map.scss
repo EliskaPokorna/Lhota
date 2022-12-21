@@ -7,7 +7,7 @@
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
 
     .headerfooter__map {
         width: 600px;
@@ -19,8 +19,20 @@
 @media screen and (min-width: 1280px) {
 
     .headerfooter__map {
-        width: 785px;
-        height: 400px;
+        max-width: 100%;
+    }
+
+    .headerfooter__iframe {
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .headerfooter__map {
+        height: 400;
+        width: 780px;
     }
 
 }

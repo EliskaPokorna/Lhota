@@ -1,7 +1,7 @@
 @use '_base';
 
 .footer {
-    background-color: #004380;
+    background-color: base.$color-primary;
     max-width: 100%;
     padding: 20px;
     padding-top: 30px;

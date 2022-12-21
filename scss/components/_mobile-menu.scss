@@ -7,7 +7,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #004380;
+    background-color: base.$color-primary;
   }
   
   .mobile-nav__link {
@@ -29,7 +29,7 @@
   .mobile-menu__toggler {
     cursor: pointer;
     display: block;
-    background-color: #004380;
+    background-color: base.$color-primary;
     color: white;
     padding: 20px;
     text-transform: uppercase;
@@ -37,8 +37,8 @@
   }
   
   .mobile-nav__link:hover, .mobile-nav__link:focus, .mobile-nav__link:active {
-    background-color: #EBF1F7;
-    color: #004380;
+    background-color: base.$color-secondary;
+    color: base.$color-primary;
   }
   
   .mobile-menu__checkbox {

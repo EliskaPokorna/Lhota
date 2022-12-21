@@ -1,0 +1,12 @@
+@use '_base';
+
+@media screen and (min-width: 768px) {
+
+    .header, .partnersbar {
+        border-top: 5px solid transparent;
+        border-image: linear-gradient(to right,#0056a3 25%,#fbbb0e 25%,#fbbb0e 50%,#b10b22 50%,#b10b22 75%,#1ba300 75%) 1;;
+    }
+
+
+
+}
